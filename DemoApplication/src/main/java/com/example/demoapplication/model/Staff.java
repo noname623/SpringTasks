@@ -1,8 +1,5 @@
 package com.example.demoapplication.model;
 
-import org.springframework.beans.factory.annotation.Qualifier;
-
-@Qualifier(value = "com.example.demoapplication.processing.BaristaCoffe")
 public class Staff {
     private String name;
     private String post;

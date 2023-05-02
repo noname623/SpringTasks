@@ -19,7 +19,7 @@ public class WaiterCoffee implements Working {
 
         Class clazz = staff.getClass();
         StringBuilder stringBuilder = new StringBuilder();
-        
+
         for (Field i : clazz.getDeclaredFields()) {
             i.setAccessible(true);
             switch (i.getName()) {
