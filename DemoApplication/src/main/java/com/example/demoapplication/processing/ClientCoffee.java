@@ -57,7 +57,7 @@ public class ClientCoffee {
             switch (i.getType().getSimpleName()) {
                 case "String":
                     String name = (String) i.get(o);
-                    stringBuilder.append(name).append(" заказ принят, ваш номер ");
+                    stringBuilder.append(name).append(", заказ принят, ваш номер ");
                     break;
                 case "Integer":
                     Integer num = (Integer) i.get(o);
