@@ -12,11 +12,14 @@ import java.lang.reflect.Field;
 @Component
 public class WaiterCoffee implements Working {
     Staff staff = new Staff("Anna", "Официант", 800.0);
-    Class clazz = staff.getClass();
-    StringBuilder stringBuilder = new StringBuilder();
 
+//  Стоит для демонстрации функционала
     @PostConstruct
     public void infoWaiter() throws IllegalAccessException {
+
+        Class clazz = staff.getClass();
+        StringBuilder stringBuilder = new StringBuilder();
+        
         for (Field i : clazz.getDeclaredFields()) {
             i.setAccessible(true);
             switch (i.getName()) {

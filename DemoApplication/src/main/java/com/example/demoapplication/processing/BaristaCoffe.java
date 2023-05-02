@@ -15,6 +15,7 @@ public class BaristaCoffe implements Working {
 
     public Staff staff = new Staff("Ivan", "Бариста", 1000.0);
 
+//  Стоит для демонстрации функционала
     @PreDestroy
     public void infoBarista() throws IllegalAccessException {
 
